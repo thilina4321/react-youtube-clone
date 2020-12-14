@@ -1,0 +1,16 @@
+.season{
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+
+}
+
+.season__text{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+
+.icon__right{
+    align-self: flex-end;
+}
