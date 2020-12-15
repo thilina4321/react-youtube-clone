@@ -13,12 +13,12 @@ const VideoDetail = (props) =>{
     return (
         <div className="video_data">
             <iframe src={videoSrc} title={props.video.title}></iframe>
-            <Card>
-                <div className="video__details">
-                    <h3> {props.video.title} </h3>
-                    <p> {props.video.description} </p>
-                </div>
-            </Card>
+                <Card>
+                    <div className="video__details">
+                        <h3> {props.video.title} </h3>
+                        <p> {props.video.description} </p>
+                    </div>
+                </Card>
         </div>
     )
 }

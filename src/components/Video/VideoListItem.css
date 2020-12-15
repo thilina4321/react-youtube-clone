@@ -1,39 +1,40 @@
-.video__list__items{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    width: 100%;
-    
-}
-
 .video__list__item{
     display: flex;
+    justify-content: flex-start;
     align-items: center;
-    height: 100px;
+    height: 150px;
     margin-bottom: 10px; 
     width: 100%;
+    flex-wrap: wrap;
     
 }
 
 .video__list__item > img{
     cursor: pointer;
-    margin-right: 20px;
-    height: 100%;
+    height: 80%;
+    margin: 0 20px 20px 0;
+}
+
+.video__list__item > p{
+    flex: 1;
 }
 
 .video_data{
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 400px;
+    height: 60vh;
+    margin-bottom: 20px;
 }
 
-.video_data > iframe{
+.video_data iframe{
     height: 70%;
+    margin: 0;
 }
 
 
 .video__details{
+    margin: 0;
     padding: 7px;
+    height: 30%;
 }

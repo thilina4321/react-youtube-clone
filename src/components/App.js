@@ -49,7 +49,6 @@ export default class App extends Component {
         return (
             <div className="app__name">
                 <SearchBar onSearchSubmitHandler={this.onSearchSubmitHandler}/>
-                
                 <VideoDetail video={this.state.onSelectVideo}/>
                 <VideoList 
                 onSelectVideoHandler={this.onSelectVideoHandler}
