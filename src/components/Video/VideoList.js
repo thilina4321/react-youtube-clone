@@ -2,9 +2,11 @@ import React from 'react'
 import VideoItem from './VideoItem'
 
 const VideoList = (props)=> {
+    const videos = props.videos
     return (
         <div>
-            {props.videos.map((video, i)=>{
+            {videos.map((video, i)=>{
+                if(i === 0) return <></>
                 return <VideoItem
                  onSelectVideoHandler = {props.onSelectVideoHandler}
                  video={video}

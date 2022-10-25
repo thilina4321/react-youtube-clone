@@ -24,14 +24,13 @@ export default class App extends Component {
         })
         const data = response.data.items.map((d)=>{
             return {
-                title:d.snippet.title,
-                description:d.snippet.description,
-                url:d.snippet.thumbnails.medium.url,
-                id:d.id.videoId,
+                title:d.snippet?.title,
+                description:d.snippet?.description,
+                url:d.snippet?.thumbnails?.medium.url,
+                id:d.id?.videoId,
             }
         })
-        // console.log(data);
-        // console.log(response.data.items);
+        
         this.setState({
             videos:data,
             onSelectVideo:data[0]
