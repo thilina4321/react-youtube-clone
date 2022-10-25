@@ -23,6 +23,7 @@ export default class SearchBar extends Component {
                 <Card>
                     <form onSubmit={this.onTermSubmitHandler}>
                         <input className="searchbar__input"
+                        type='search'
                         placeholder="Search"
                         value={this.state.term}
                         onChange={this.onTermChangeHandler}

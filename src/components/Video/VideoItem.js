@@ -6,12 +6,14 @@ const VideoItem = (props) =>{
     
     return (
             <div 
+            onClick={()=>props.onSelectVideoHandler(props.video)}
             className="video__list__item">
                 <img
-                onClick={()=>props.onSelectVideoHandler(props.video)}
+                height="100%"
+                
                  src={props.video.url} alt={props.video.title}/>
 
-                    {props.video.title.substring(0,10)}
+                  <h3>{props?.video?.title}</h3>  
                 <Divider/>
             </div> 
     )

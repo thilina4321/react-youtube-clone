@@ -15,8 +15,8 @@ const VideoDetail = (props) =>{
             <iframe src={videoSrc} title={props.video.title}></iframe>
                 <Card>
                     <div className="video__details">
-                        <h3> {props.video.title} </h3>
-                        <p> {props.video.description} </p>
+                        <h2> {props?.video?.title} </h2>
+                        <p style={{marginTop:'1rem'}}> {props?.video?.description} </p>
                     </div>
                 </Card>
         </div>
